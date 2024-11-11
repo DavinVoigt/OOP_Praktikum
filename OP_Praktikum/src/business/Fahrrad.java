@@ -1,5 +1,10 @@
 package business;
 
+import writers.ConcreteConsoleWriterProduct;
+import writers.ConcreteTxtWriterProduct;
+import writers.WriterCreator;
+import writers.WriterProduct;
+
 public class Fahrrad {
 	
 	private String name;
@@ -75,5 +80,22 @@ public class Fahrrad {
 	      this.getTyp() + trenner + "\n" + 
 	      this.getGroessen() + trenner + "\n";
 	  }
+	  
+	  /*
+	   public class ConcreteWriterCreator extends WriterCreator{
+	
+	public WriterProduct factoryMethod(String typ){
+		if("txt".equals(typ)) {
+			return new ConcreteTxtWriterProduct();
+		} else if ("console".equals(typ)) {
+			return new ConcreteConsoleWriterProduct();
+		} else {
+			System.out.println("Keine Erstellung eines WriterProduct mit gewünschten Typ möglich \n Typ: " + typ );
+			return null;
+		}
+	}
+
+}
+	   */
 
 }
