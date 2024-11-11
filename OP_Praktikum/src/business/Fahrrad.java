@@ -1,10 +1,5 @@
 package business;
 
-import writers.ConcreteConsoleWriterProduct;
-import writers.ConcreteTxtWriterProduct;
-import writers.WriterCreator;
-import writers.WriterProduct;
-
 public class Fahrrad {
 	
 	private String name;
